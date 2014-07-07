@@ -1,0 +1,16 @@
+.hidden {
+	display: none;
+}
+
+#SearchForm {
+	position: absolute;
+	left: 20px;
+	top: 120px;
+	width: 350px;
+}
+.retrieveTicket {
+	position: absolute;
+	left: 1000px;
+	top: 60px;
+	width: 350px;
+}

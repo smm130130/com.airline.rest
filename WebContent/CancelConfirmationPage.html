@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Cancel Confirmation</title>
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<title>Incognito's Airline</title>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="js/polyfill.js"></script>
+<script src="js/returnDisplay.js"></script>
+</head>
+<body>
+<body id="page3">
+<div class="main">
+<center>
+ <h2>Welcome to Incognito's Airline</h2>
+<header>
+		<div class="wrapper">
+			<h1><a href="index.html" id="logo">Air lines</a></h1>
+			<span id="slogan">Fast, Frequent &amp; Safe Flights</span>
+<nav id="top_nav">
+				<ul>
+					<li><a href="search.html" class="nav1">Home</a></li> 
+				
+				</ul>
+			</nav>
+			 
+		</div>
+		</header>
+		<br>
+<div>
+<script type="text/javascript">
+document.write(("Hello "+sessionStorage.getItem("CCNAME")+"!!!!!!!"+"<br>"));
+document.write(("Your Ticket has been Cancelled with BookingID : "+sessionStorage.getItem("CCBOOKINGID"))+"<br>");
+document.write(("An Email has been sent to : "+sessionStorage.getItem("CCEMAIL"))+"<br>");
+</script>
+</div>
+</center>
+<br>
+<div>
+<img border="0" src="images/i16.jpg" alt=" " width="950" height="228">
+</div>
+</div>
+</body>
+</html>

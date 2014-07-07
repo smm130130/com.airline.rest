@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Incognito's Airline</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<script	src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="js/polyfill.js"></script>
+<script src="js/search.js"></script>
+<script src="js/returnTicket.js"></script>
+<script src="js/validations.js"></script>
+<script type="text/javascript" src="js/jquery-1.5.2.js" ></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-replace.js"></script>  
+<script type="text/javascript" src="js/Cabin_400.font.js"></script>
+<script type="text/javascript" src="js/tabs.js"></script> 
+<script type="text/javascript" src="js/jquery.jqtransform.js" ></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript" src="js/atooltip.jquery.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<!--<script type="text/javascript" src="js/searchAgent.js"></script>-->
+
+<style>
+table,th,td
+{
+border:1px solid black;
+border-collapse:collapse;
+}
+</style>
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/html5.js"></script>
+<style type="text/css">
+	.main, .tabs ul.nav a, .content, .button1, .box1, .top { behavior:url(js/PIE.htc)}
+</style>
+<![endif]-->
+<!--[if lt IE 7]>
+	<div style=' clear: both; text-align:center; position: relative;'>
+		<a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg" border="0"  alt="" /></a>
+	</div>
+<![endif]-->
+</head>
+<body id="page1">
+<div class="main">
+<center><h2 style="font-weight:bold;color:black">Welcome to Incognito's Airline</h2></center>
+<!--header -->
+	<header>
+		<div class="wrapper">
+			<h1><a href="index.html" id="logo">Air lines</a></h1>
+			<span id="slogan">Fast, Frequent &amp; Safe Flights</span>
+			 
+		</div>
+		
+
+	</header><div class="ic"> </div>
+<!-- / header -->
+<!--content -->
+	<section id="content">
+		<div class="for_banners">
+			<article class="col1">
+						<div class="tabs">
+							<ul class="nav">
+								<li class="selected" style="width:287px;font-weight:bold;font-size:16px"><a >Fast and Simple Flight Booking</a></li>
+								 
+							</ul>
+							<div class="content">
+								<div class="tab-content" id="Flight">
+								<!--<form id="form_1" method="post">-->
+<div id="SearchForm" style="top: 30px;left: 0px">
+
+<form id="search" name="search" action="#">					
+											<div class="row">
+												<span class="left">Enter Source City</span>
+												<input type="text" class="input" id="sourceId" name="source" style="margin-left:35px;border:1px solid gray">
+											</div>
+											<div class="row">
+												<span class="left">Enter Destination City</span>
+												<input type="text" class="input" id="destId" name="dest" style="margin-left:11px;border:1px solid gray">
+											</div>
+<input style="margin-left: 0px;margin-top: 20px;width: 120px;background-color: gray;font-size: 16px;font-weight: bold;" type="button" id="submit_it" name="submit_it"
+			value="Find Flights"></input>
+ <br>
+ </form>
+<div class="row" id="test">
+<BR><span class="left" style="font-size:18px;color:maroon" id="ticket">Already Booked a Ticket?</span><br><br>
+												<span class="left" id="bookId">Enter Booking ID</span>
+												<input type="text" class="input"  id="BookingId" name="BookingId" style="margin-left:35px;border:1px solid gray">
+												
+
+<input type="button" id="getTicket" style="background-color: gray;color: black;font-size: 16px;font-weight: bold;width:120px" value="Get Ticket">											</div>
+<br><br><input type="button" value="Click here for User Agent Login" style="top:500px;background-color:#F07A7A;font-size: 14px;font-weight: bold;" id="agent">
+
+
+<form id="searchAgent" name="searchAgent" action="#" class="hidden" style="top:0px">					
+											<div class="row">
+												<span class="left">Enter UserName</span>
+												<input type="text" class="input" id="username" name="username" style="margin-left:35px;border:1px solid gray">
+											</div>
+											<div class="row">
+												<span class="left">Enter Password</span>
+												<input type="password" class="input" id="pwd" name="pwd" style="margin-left:39px;border:1px solid gray">
+											</div>
+<input style="margin-left: 132px;margin-top: 20px;width: 120px;background-color: gray;font-size: 16px;font-weight: bold;" type="button" id="login" name="login"
+			value="Login"></input>
+			<input style="margin-left: 132px;margin-top: 20px;width: 130px;background-color: #F07A7A;font-size: 14px;font-weight: bold;" type="button" id="searchbk" name="seachbk"
+			value="Back to Search"></input>
+			<br/><br/>
+			
+ <br>
+ </form>
+
+</div>
+										
+								
+								 
+						</div>
+						</div>
+						</div>	
+					</article>
+					<div id="slider">
+						<img src="images/banner1.jpg" alt="">
+						<img src="images/banner2.jpg" alt="">
+						<img src="images/banner3.jpg" alt="">
+					</div>
+				</div>
+		<div class="wrapper pad1" id="info">
+			<article class="col1">
+				<div class="box1">
+							<h2 class="top">Offers of the Week</h2>
+							<div class="pad">
+								<strong>From Dallas</strong><br>
+								<ul class="pad_bot1 list1">
+									<li>
+										<span class="right color1"> USD 1050.</span>
+										<p>Chennai</p>
+									</li>
+<li>
+										<span class="right color1"> USD 1250.</span>
+										<p>Delhi</p>
+									</li>
+								</ul>
+								<strong>From Austin</strong><br>
+								<ul class="pad_bot1 list1">
+									<li>
+										<span class="right color1"> USD 1000.</span>
+										<p>Goa</p>
+									</li>
+<li>
+										<span class="right color1"> USD 1050.</span>
+										<p>Bombay</p>
+									</li>
+									 
+									 
+							</div>
+						</div>
+					</article>
+					<article class="col2">
+						<h3>About Our Airlines</h3>
+						<div class="wrapper">
+							<article class="cols">
+								<figure><img src="images/page1_img1.jpg" alt="" class="pad_bot2"></figure>
+								<p class="pad_bot1"><strong>Airlines is one of  one of the earliest changes to improve efficiency. ARS eventually evolved into the computer reservations system (CRS). A computer reservation system is used for the reservations of a particular airline and interfaces with a global distribution system </strong></p>
+								 
+							</article>
+							<article class="cols pad_left1">
+								<figure><img src="images/page1_img2.jpg" alt="" class="pad_bot2"></figure>
+								<p class="pad_bot1"><strong> The history of airline reservations systems began in the late 1950s when American Airlines required a system that would allow real-time access to flight details in all of its offices which supports travel agencies and other distribution channels in making reservations for most major airlines in a single system .</strong></p>
+								 
+							</article>
+						</div>
+						 
+					</article>
+				</div>
+				<br></br>
+				<div id="tableSearch" style="left: 0px;height:200px;overflow:auto" class="hidden">
+				<label style="font-size:16px;">Search Results for your Journey</label><br><br>
+					<table id="table1" >
+						<tr >
+							<th style="width:120px">FlightID</th>
+							<th style="width:120px">SOURCE</th>
+							<th style="width:120px">DESTINATION</th>
+							<th style="width:120px">StartTime</th>
+							<th style="width:120px">EndTime</th>
+							<th style="width:120px">FARE</th>
+							<th style="width:120px"></th>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<!--content end-->
+			<!--footer -->
+			<footer id="footer">
+				<div class="wrapper">
+					<ul id="icons">
+						<li><a href="#" class="normaltip" title="Facebook"><img src="images/icon1.jpg" alt=""></a></li>
+						<li><a href="#" class="normaltip" title="Delicious"><img src="images/icon2.jpg" alt=""></a></li>
+						<li><a href="#" class="normaltip" title="Stumble Upon"><img src="images/icon3.jpg" alt=""></a></li>
+						<li><a href="#" class="normaltip" title="Twitter"><img src="images/icon4.jpg" alt=""></a></li>
+						<li><a href="#" class="normaltip" title="Linkedin"><img src="images/icon5.jpg" alt=""></a></li>
+						<li><a href="#" class="normaltip" title="Reddit"><img src="images/icon6.jpg" alt=""></a></li>
+					</ul>
+				</div>	 
+			</footer>
+			<!--footer end-->
+<script type="text/javascript"> Cufon.now(); </script>
+<script>
+	$(document).ready(function() {
+		tabs.init();
+	});
+	jQuery(document).ready(function($) {
+		$('#form_1, #form_2, #form_3').jqTransform({imgPath:'jqtransformplugin/img/'});	
+	});
+	$(window).load(function() {
+	$('#slider').nivoSlider({
+		effect:'fade', //Specify sets like: 'fold,fade,sliceDown, sliceDownLeft, sliceUp, sliceUpLeft, sliceUpDown, sliceUpDownLeft' 
+		slices:15,
+		animSpeed:500,
+		pauseTime:6000,
+		startSlide:0, //Set starting Slide (0 index)
+		directionNav:false, //Next & Prev
+		directionNavHide:false, //Only show on hover
+		controlNav:false, //1,2,3...
+		controlNavThumbs:false, //Use thumbnails for Control Nav
+		controlNavThumbsFromRel:false, //Use image rel for thumbs
+		controlNavThumbsSearch: '.jpg', //Replace this with...
+		controlNavThumbsReplace: '_thumb.jpg', //...this in thumb Image src
+		keyboardNav:true, //Use left & right arrows
+		pauseOnHover:true, //Stop animation while hovering
+		manualAdvance:false, //Force manual transitions
+		captionOpacity:1, //Universal caption opacity
+		beforeChange: function(){},
+		afterChange: function(){},
+		slideshowEnd: function(){} //Triggers after all slides have been shown
+	});
+	});
+</script>
+</body>
+</html>
